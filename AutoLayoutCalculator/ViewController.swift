@@ -19,9 +19,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func buttonPressed(_ sender: Any) {
-    }
     
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        if let buttonTitle = sender.title(for: .normal) {
+            print(buttonTitle)
+        }
+    }
 }
 
